@@ -4,13 +4,13 @@ end
 
 ######### Combien de pseudo  ###########
 def nombre_de_pseudo
-	puts "Il y a #{journalist_list.size} mails"
+	puts "Il y a #{journalist_list.size} pseudo"
 end
 nombre_de_pseudo
 
 ######### combien de pseudo ont un numero ###########
 def nombre_numero_liste
-	puts "#{journalist_list.grep(/\d/).count} ont un numero dans leur mail"
+	puts "#{journalist_list.grep(/\d/).count} ont un numero dans leur pseudo"
 end
 nombre_numero_liste
 
@@ -28,7 +28,7 @@ def first_capital_inside(journalist_list)
 					compteur += 1
 				end
 		end
-	puts "#{compteur} commence par une majuscule dans leur mail"
+	puts "#{compteur} commence par une majuscule dans leur pseudo"
 end
 first_capital_inside(journalist_list)
 # upcase = majuscule # [1] = le premier caractere
@@ -36,7 +36,7 @@ first_capital_inside(journalist_list)
 
 ####### Nombre de Majuscule dans la liste ###########
 def capitale_count
-	puts "#{journalist_list.grep(/[A-Z]/).count} ont une majuscule dans leur mail"
+	puts "#{journalist_list.grep(/[A-Z]/).count} ont une majuscule dans leur pseudo"
 end
 capitale_count
 
